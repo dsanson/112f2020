@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="author" content="David Sanson">
+  <meta name="dcterms.date" content="2020-08-27">
+  <title>Phi 112: Day 4</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js@^4//dist/reset.css">
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js@^4//dist/reveal.css">
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js@^4//dist/theme/moon.css" id="theme">
+  <link rel="stylesheet" href="/Users/desanso/web/_site/css/carnap.css"/>
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide" data-background-image="img/syntax.jpg" data-background-opacity=".2" data-background-size="fill">
+  <h1 class="title">Phi 112: Day 4</h1>
+  <p class="subtitle">Sentential Logic</p>
+  <p class="author">David Sanson</p>
+  <p class="date">27 August 2020</p>
+</section>
+
+<section>
+<section id="agenda" class="title-slide slide level1">
+<h1>Agenda</h1>
+<ul>
+<li>Course/Tech support?</li>
+<li>Sentential Logic Symbols</li>
+<li>Sentential Logic Syntax</li>
+<li>Informal Notation</li>
+</ul>
+</section>
+<section class="slide level2">
+
+<ul>
+<li>Zoom XP not yet added (getting there!)</li>
+<li>Discord: ongoing bot problems (@ me if your stats need adjusting)</li>
+<li>Retakes in full swing!</li>
+<li>Unit 3 not yet posted.</li>
+<li>Office Hours?</li>
+</ul>
+</section></section>
+<section>
+<section id="sentential-logic-symbols" class="title-slide slide level1">
+<h1>Sentential Logic: Symbols</h1>
+
+</section>
+<section id="symbols" class="slide level2">
+<h2>Symbols</h2>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Name</th>
+<th style="text-align: center;">Symbol</th>
+<th style="text-align: center;">English Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Conjunction</td>
+<td style="text-align: center;">∧</td>
+<td style="text-align: center;">‘and’</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Disjunction</td>
+<td style="text-align: center;">∨</td>
+<td style="text-align: center;">‘or’</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Conditional</td>
+<td style="text-align: center;">→</td>
+<td style="text-align: center;">‘if…then …’</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Biconditional</td>
+<td style="text-align: center;">↔︎</td>
+<td style="text-align: center;">‘if and only if’</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Negation</td>
+<td style="text-align: center;">¬</td>
+<td style="text-align: center;">‘it is not the case that’</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="simple-sentences" class="slide level2">
+<h2>Simple Sentences</h2>
+<table>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">¬P</td>
+<td style="text-align: left;">It is not the case that P</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">P→Q</td>
+<td style="text-align: left;">If P, then Q.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">P∧Q</td>
+<td style="text-align: left;">Both P and Q.</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">P∨Q</td>
+<td style="text-align: left;">Either P or Q.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="english-examples" class="slide level2">
+<h2>English Examples</h2>
+<table>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">¬<span class="P">P</span></td>
+<td style="text-align: left;">It is not the case that <span class="P">the pie is ready</span>.</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"><span class="P">P</span>→<span class="Q">Q</span></td>
+<td style="text-align: left;">If <span class="P">the pie is ready</span>, then <span class="Q">we eat it</span>.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"><span class="P">P</span>∧<span class="Q">Q</span></td>
+<td style="text-align: left;">Both <span class="P">the pie is ready</span> and <span class="Q">we eat it</span>.</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"><span class="P">P</span>∨<span class="Q">Q</span></td>
+<td style="text-align: left;">Either <span class="P">the pie is ready</span> or <span class="Q">we eat it</span>.</td>
+</tr>
+</tbody>
+</table>
+</section></section>
+<section>
+<section id="sentential-logic-syntax" class="title-slide slide level1">
+<h1>Sentential Logic: Syntax</h1>
+
+</section>
+<section id="syntax" class="slide level2">
+<h2>“Syntax”</h2>
+<ul>
+<li>‘Syntax’ is another word for grammar.</li>
+<li>It is a set of rules that tell you when a combination of words makes a grammatically well-formed sentence.</li>
+<li>‘Dog the of bark’: not a well-formed sentence.</li>
+<li>‘Dogs bark’: a well-formed sentence.</li>
+</ul>
+</section>
+<section id="syntax-for-natural-languages" class="slide level2">
+<h2>Syntax for Natural Languages</h2>
+<ul>
+<li>The syntax of a <em>Natural</em> Language like English is super complicated.</li>
+<li>(and super neat: there is an entire branch of Linguistics devoted to the study of syntax in natural languages.)</li>
+<li>It’s amazing that we all recognize grammatical errors, given how complicated the rules are, and we can’t actually <em>say</em> what those rules are.</li>
+</ul>
+</section>
+<section id="syntax-for-sentential-logic" class="slide level2">
+<h2>Syntax for Sentential Logic</h2>
+<ol type="1">
+<li>Every sentence letter ‘P’, ‘Q’, ‘R’, …, ‘Z’ is a sentence. And so are the sentence letters with subscripts.</li>
+<li>If ‘▢’ is a sentence, then ‘¬▢’ is too.</li>
+<li>If ‘▢’ and ‘◯’ are both sentences, then:
+<ol type="a">
+<li>‘(▢ ∧ ◯ )’ is also a sentence, and</li>
+<li>‘(▢ ∨ ◯ )’ is also a sentence, and</li>
+<li>‘(▢ → ◯ )’ is also a sentence, and</li>
+<li>‘(▢ ↔︎ ◯ )’ is also a sentence.</li>
+</ol></li>
+</ol>
+</section>
+<section id="examples-of-sentences" class="slide level2">
+<h2>Examples of Sentences</h2>
+<p>(P → Q)</p>
+<div>
+<ul>
+<li class="fragment">‘P’ and ‘Q’ are sentences, by rule 1.</li>
+<li class="fragment">So ‘(P → Q)’ is a sentence, by rule 3c.</li>
+</ul>
+</div>
+</section>
+<section id="examples-of-sentences-1" class="slide level2">
+<h2>Examples of Sentences</h2>
+<p>¬(P → Q)</p>
+<div>
+<ul>
+<li class="fragment">We just saw that ‘(P → Q)’ is a sentence.</li>
+<li class="fragment">So ‘¬(P→Q)’ is a sentence, by rule 2.</li>
+</ul>
+</div>
+</section>
+<section id="examples-of-sentences-2" class="slide level2">
+<h2>Examples of Sentences</h2>
+<p>¬¬¬¬¬¬¬¬¬Z</p>
+<div>
+<ul>
+<li class="fragment">‘Z’ is a sentence by rule 1.</li>
+<li class="fragment">So ‘¬Z’ is a sentence by rule 2.</li>
+<li class="fragment">So ‘¬¬Z’ is a sentence by rule 2.</li>
+<li class="fragment">So ‘¬¬¬Z’ is…</li>
+</ul>
+</div>
+</section>
+<section id="examples-of-sentences-3" class="slide level2">
+<h2>Examples of Sentences</h2>
+<p>((P ∧ Q) ∨ (Q → R))</p>
+<div>
+<ul>
+<li class="fragment">‘(P ∧ Q)’ is a sentence, by rule 1 and then rule 3a.</li>
+<li class="fragment">‘(Q → R)’ is, by rule 1 and then rule 3c.</li>
+<li class="fragment">So ‘((P ∧ Q) ∨ (Q → R))’, by rule 3b.</li>
+</ul>
+</div>
+</section>
+<section id="examples-of-sentences-4" class="slide level2">
+<h2>Examples of Sentences</h2>
+<p>(((P ∧ Q) ∨ (Q → R))↔︎ ¬¬¬¬¬¬¬¬¬Z)</p>
+<div>
+<ul>
+<li class="fragment">‘((P ∧ Q) ∨ (Q → R))’ is a sentence.</li>
+<li class="fragment">‘¬¬¬¬¬¬¬¬¬Z’ is a sentence.</li>
+<li class="fragment">So, by rule 3d, this is also a sentence.</li>
+</ul>
+</div>
+</section>
+<section id="not-a-sentence" class="slide level2">
+<h2>Not a Sentence</h2>
+<p>QQQQR</p>
+<div>
+<ul>
+<li class="fragment">‘Q’ and ‘R’ are sentence letters.</li>
+<li class="fragment">But there is no way to combine them, using our rules, to get this result.</li>
+</ul>
+</div>
+</section>
+<section id="not-a-sentence-1" class="slide level2">
+<h2>Not a Sentence</h2>
+<p>(P)</p>
+<div>
+<ul>
+<li class="fragment">‘P’ is a sentence.</li>
+<li class="fragment">But there is no rule that lets you surround a sentence with parentheses.</li>
+</ul>
+</div>
+</section>
+<section id="not-a-sentence-2" class="slide level2">
+<h2>Not a Sentence</h2>
+<p>¬(P)</p>
+<div>
+<ul>
+<li class="fragment">‘¬P’ is a sentence.</li>
+<li class="fragment">But there is no rule that lets you surround a sentence with parentheses.</li>
+<li class="fragment">Specifically, rule 2 does not introduce any parentheses.</li>
+</ul>
+</div>
+</section>
+<section id="the-main-connective" class="slide level2">
+<h2>“The Main Connective”</h2>
+<ul>
+<li>(P <span class="P">→</span> Q)</li>
+<li><span class="P">¬</span>(P → Q)</li>
+<li><span class="P">¬</span>¬¬¬¬¬¬¬¬Z</li>
+<li>((P ∧ Q) <span class="P">∨</span> (Q → R))</li>
+<li>(((P ∧ Q) ∨ (Q → R))<span class="P">↔︎</span> ¬¬¬¬¬¬¬¬¬Z)</li>
+</ul>
+</section>
+<section id="parsing-in-carnap" class="slide level2">
+<h2>Parsing in Carnap</h2>
+<p><a href="https://carnap.io/shared/dsanson@gmail.com/Breakout%20Exercise%20Day%2004">An example</a></p>
+</section>
+<section id="breakout-activity" class="slide level2">
+<h2>Breakout Activity</h2>
+<ul>
+<li>Work on the “<a href="https://carnap.io/shared/dsanson@gmail.com/Breakout%20Exercise%20Day%2004#exercises-with-official-notation">Exercises with Official Notation</a>”</li>
+</ul>
+</section>
+<section id="return" class="slide level2">
+<h2>Return</h2>
+<p>Share and Discuss</p>
+</section></section>
+<section>
+<section id="parentheses-and-informal-notation" class="title-slide slide level1">
+<h1>Parentheses and Informal Notation</h1>
+
+</section>
+<section id="outermost-parentheses" class="slide level2">
+<h2>Outermost Parentheses</h2>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Official</th>
+<th style="text-align: left;">Informal</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">(P→Q)</td>
+<td style="text-align: left;">P→Q</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">((P∧Q)∨R)</td>
+<td style="text-align: left;">(P∧Q)∨R</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">¬(P→Q)</td>
+<td style="text-align: left;">Nope</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="junctions-before--ditionals" class="slide level2">
+<h2>-Junctions before -ditionals</h2>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Official</th>
+<th style="text-align: left;">Informal</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">(P∧Q)→(Q∨R)</td>
+<td style="text-align: left;">P∧Q→Q∨R</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Q↔︎(R∨S)</td>
+<td style="text-align: left;">Q↔︎R∨S</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">(Q→(R↔︎S))</td>
+<td style="text-align: left;">Nope</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="comparison-to-arithmetic" class="slide level2">
+<h2>Comparison to Arithmetic</h2>
+<p><span class="math inline">2 − 2 × 2</span></p>
+<div class="nobullets twocolumn">
+<ul>
+<li class="fragment"><span class="math inline">2 − (2 × 2)</span></li>
+<li class="fragment"><span class="math inline">2 − 4</span></li>
+<li class="fragment"><span class="math inline"> − 2</span></li>
+</ul>
+<!-- -->
+<ul>
+<li class="fragment"><span class="math inline">(2 − 2) × 2</span></li>
+<li class="fragment"><span class="math inline">0 × 2</span></li>
+<li class="fragment"><span class="math inline">0</span></li>
+</ul>
+</div>
+</section>
+<section id="comparison-to-arithmetic-1" class="slide level2">
+<h2>Comparison to Arithmetic</h2>
+<ul>
+<li>∧ and ∨ behave kind of like <span class="math inline">×</span></li>
+<li>→ and ↔︎ behave kind of like <span class="math inline">+</span></li>
+</ul>
+</section>
+<section id="the-lefty-rule-for--junctions" class="slide level2">
+<h2>The Lefty Rule for -Junctions</h2>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Official</th>
+<th style="text-align: left;">Informal</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">(P∧Q)∧R</td>
+<td style="text-align: left;">P∧Q∧R</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">(P∨Q)∨R</td>
+<td style="text-align: left;">P∨Q∨R</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Nope</td>
+<td style="text-align: left;">P∨Q∧R</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Nope</td>
+<td style="text-align: left;">P→Q→R</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="comparison-to-arithmetic-2" class="slide level2">
+<h2>Comparison to Arithmetic</h2>
+<p><span class="math inline">4 − 2 − 2</span></p>
+<div class="nobullets twocolumn">
+<ul>
+<li class="fragment"><span class="math inline">(4 − 2) − 2</span></li>
+<li class="fragment"><span class="math inline">2 − 2</span></li>
+<li class="fragment"><span class="math inline">0</span></li>
+</ul>
+<!-- -->
+<ul>
+<li class="fragment"><span class="math inline">4 − (2 − 2)</span></li>
+<li class="fragment"><span class="math inline">4 − 0</span></li>
+<li class="fragment"><span class="math inline">4</span></li>
+</ul>
+</div>
+</section>
+<section id="breakout-room" class="slide level2">
+<h2>Breakout Room</h2>
+<ul>
+<li>Go back to <a href="https://carnap.io/shared/dsanson@gmail.com/Breakout%20Exercise%20Day%2004#exercises-with-informal-notation">Breakout Exercises page on Carnap</a></li>
+<li>Work on the Exercises with Informal Notation</li>
+</ul>
+</section>
+<section id="return-1" class="slide level2">
+<h2>Return</h2>
+<p>Share and discuss</p>
+</section></section>
+<section id="what-you-should-be-doing" class="title-slide slide level1">
+<h1>What You Should Be Doing</h1>
+<ul>
+<li>Completing any Retakes on Unit 1
+<ul>
+<li>If you haven’t taken the Unit 1 Test yet, you are behind.</li>
+</ul></li>
+<li>Finishing Unit 2</li>
+<li>Start in on the Unit 3 Reading over the Weekend</li>
+<li>Keep talking on Discord.</li>
+</ul>
+</section>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/reveal.js@^4//dist/reveal.js"></script>
+
+  // reveal.js plugins
+  <script src="https://unpkg.com/reveal.js@^4//plugin/notes/notes.js"></script>
+  <script src="https://unpkg.com/reveal.js@^4//plugin/search/search.js"></script>
+  <script src="https://unpkg.com/reveal.js@^4//plugin/zoom/zoom.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+        // Display controls in the bottom right corner
+        controls: true,
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+        // Push each slide change to the browser history
+        history: true,
+
+        // reveal.js plugins
+        plugins: [
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    </body>
+</html>

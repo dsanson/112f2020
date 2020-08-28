@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+
+while true; do
+  case "$1" in
+    -s)
+      opt='--self-contained'
+      shift
+      ;;
+    *)
+      break
+      ;;
+  esac
+done
+
+in="$1"
+out="${1%.md}.html"
+
+pandoc -t revealjs "$in" -o "$out" -s --css "$HOME"/web/_site/css/carnap.css $opt --slide-level 2

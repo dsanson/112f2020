@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="author" content="David Sanson">
+  <meta name="dcterms.date" content="2020-08-25">
+  <title>Phi 112: Day 3</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js@^4//dist/reset.css">
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js@^4//dist/reveal.css">
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js@^4//dist/theme/moon.css" id="theme">
+  <link rel="stylesheet" href="/Users/desanso/web/_site/css/carnap.css"/>
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide" data-background-image="img/mondrian.jpg" data-background-opacity=".5" data-background-size="fill">
+  <h1 class="title">Phi 112: Day 3</h1>
+  <p class="subtitle">Logical Form</p>
+  <p class="author">David Sanson</p>
+  <p class="date">25 August 2020</p>
+</section>
+
+<section id="agenda" class="title-slide slide level1">
+<h1>Agenda</h1>
+<ul>
+<li>Annoucements: tech support; gradebook; retakes</li>
+<li>Validity and Formal Validity (Breakout)</li>
+<li>Validity and Ambiguity (Breakout)</li>
+<li>Playing with our new (Unit 2) Symbols (Breakout)</li>
+</ul>
+</section>
+
+<section>
+<section id="announcements" class="title-slide slide level1">
+<h1>Announcements</h1>
+
+</section>
+<section id="tech-supportupdates" class="slide level2">
+<h2>Tech Support/Updates</h2>
+<ul>
+<li>Carnap.io: how to check your scores; typo bounty 20XP</li>
+<li>Discord: bot problems (@ me if your stats need adjusting)</li>
+<li>Zoom XP not yet added (getting there!)</li>
+<li>Reggienet Gradebook now available (not auto-updated)</li>
+</ul>
+</section>
+<section id="gradebook" class="slide level2">
+<h2>Gradebook</h2>
+<ul>
+<li>U1R is “Unit 1 Reading”; U1E, “Unit 1 Exercises”, etc.</li>
+<li>U1 is the unit itself: 0=incomplete, 60=nearly, 80=complete, or 90=mastered.</li>
+<li>Quiz and Test retakes: what you see is your <em>highest</em> score.</li>
+</ul>
+</section>
+<section id="retakes" class="slide level2">
+<h2>Retakes</h2>
+<ul>
+<li>Guide for asking for retakes posted to the ReggieNet syllabus page.</li>
+</ul>
+</section></section>
+<section>
+<section id="validity-and-formal-validity" class="title-slide slide level1">
+<h1>Validity and Formal Validity</h1>
+
+</section>
+<section id="definitions" class="slide level2">
+<h2>Definitions</h2>
+<dl>
+<dt>Validity</dt>
+<dd>An argument is <em>valid</em> iff it is impossible that all of its premises be true, but its conclusion false.
+</dd>
+<dt>Formal Validity</dt>
+<dd>An argument is <em>formally valid</em> iff every argument that shares its logical form is valid.
+</dd>
+</dl>
+</section>
+<section id="two-arguments" class="slide level2" data-transition="fade">
+<h2 data-transition="fade">Two Arguments</h2>
+<div id="standardform">
+<div class="line-block"><span class="premise">The Pope is an unmarried man.</span><br />
+<span class="conclusion">The Pope is unmarried.</span></div>
+</div>
+<div id="standardform" style="margin-top:2em">
+<div class="line-block"><span class="premise">The Pope is a bachelor.</span><br />
+<span class="conclusion">The Pope is unmarried.</span></div>
+</div>
+</section>
+<section id="formally-valid" class="slide level2" data-transition="fade">
+<h2 data-transition="fade">Formally Valid</h2>
+<div id="standardform">
+<div class="line-block"><span class="premise"><span class="A">The Pope</span> is an <span class="B">unmarried</span> <span class="C">man</span>.</span><br />
+<span class="conclusion"><span class="A">The Pope</span> is <span class="B">unmarried</span>.</span></div>
+</div>
+<div id="standardform" style="margin-top:2em">
+<div class="line-block"><span class="premise"><span class="A">Philosophy</span> is a <span class="B">useless</span> <span class="C">degree</span>.</span><br />
+<span class="conclusion"><span class="A">Philosophy</span> is <span class="B">useless</span>.</span></div>
+</div>
+</section>
+<section id="not-formally-valid" class="slide level2" data-transition="fade">
+<h2 data-transition="fade">Not Formally Valid</h2>
+<div id="standardform">
+<div class="line-block"><span class="premise"><span class="A">The Pope</span> is a <span class="B">bachelor</span>.</span><br />
+<span class="conclusion"><span class="A">The Pope</span> is <span class="C">unmarried</span>.</span></div>
+</div>
+<div id=standardform style='margin-top:2em' >
+
+<div class="line-block"><span class="premise"><span class="A">The Sun</span> is a <span class="B">star</span>.</span><br />
+<span class="conclusion"><span class="A">The Sun</span> is <span class="C">green</span>.</span></div>
+</section>
+<section id="breakout-activity" class="slide level2">
+<h2>Breakout Activity</h2>
+<ul>
+<li>The point of this activity is to get you thinking about logical form.</li>
+<li>The Google Doc has several arguments. Some are formally valid, others not.</li>
+<li>Try to show that they aren’t valid by constructing <em>counterexamples to formal validity</em>: arguments with the same form, that lead from true premises to a false conclusion.</li>
+</ul>
+</section>
+<section id="return" class="slide level2">
+<h2>Return</h2>
+<p>Share and Discuss</p>
+</section></section>
+<section>
+<section id="validity-and-ambiguity" class="title-slide slide level1">
+<h1>Validity and Ambiguity</h1>
+
+</section>
+<section id="ambiguous-sentences" class="slide level2">
+<h2>Ambiguous Sentences</h2>
+<dl>
+<dt>Ambiguous Sentences</dt>
+<dd>An <em>ambiguous sentence</em> is a sentence that has more than one possible meaning.
+</dd>
+</dl>
+<ul>
+<li>I caught the fish with the net.</li>
+<li>It is good or it is bad and I like it.</li>
+</ul>
+</section>
+<section id="breakout-activity-1" class="slide level2">
+<h2>Breakout Activity</h2>
+<ul>
+<li>Work together on the Unit 2 Exercises on Ambiguity.</li>
+</ul>
+</section>
+<section id="return-1" class="slide level2">
+<h2>Return</h2>
+<p>Share and Discuss</p>
+</section></section>
+<section>
+<section id="sentential-logic" class="title-slide slide level1">
+<h1>Sentential Logic</h1>
+
+</section>
+<section id="symbols" class="slide level2">
+<h2>Symbols</h2>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Name</th>
+<th style="text-align: center;">Symbol</th>
+<th style="text-align: center;">English Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Conjunction</td>
+<td style="text-align: center;">∧</td>
+<td style="text-align: center;">‘and’</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Disjunction</td>
+<td style="text-align: center;">∨</td>
+<td style="text-align: center;">‘or’</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Conditional</td>
+<td style="text-align: center;">→</td>
+<td style="text-align: center;">‘if…then …’</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Biconditional</td>
+<td style="text-align: center;">↔︎</td>
+<td style="text-align: center;">‘if and only if’</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Negation</td>
+<td style="text-align: center;">¬</td>
+<td style="text-align: center;">‘it is not the case that’</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="simple-sentences" class="slide level2">
+<h2>Simple Sentences</h2>
+<table>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">¬P</td>
+<td style="text-align: left;">It is not the case that P</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">P→Q</td>
+<td style="text-align: left;">If P, then Q.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">P∧Q</td>
+<td style="text-align: left;">Both P and Q.</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">P∨Q</td>
+<td style="text-align: left;">Either P or Q.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="valid-forms-in-sentential-logic" class="slide level2">
+<h2>Valid Forms in Sentential Logic</h2>
+<div id="standardform">
+<div class="line-block"><span class="premise">P→Q</span><br />
+<span class="premise">?</span><br />
+<span class="conclusion">?</span></div>
+</div>
+</section>
+<section id="breakout-activity-2" class="slide level2">
+<h2>Breakout Activity</h2>
+<ul>
+<li>For each simple sentence, think about what follows from it, perhaps with the help of an additional premise.</li>
+<li>The Google Doc has prompts.</li>
+</ul>
+</section>
+<section id="return-2" class="slide level2">
+<h2>Return</h2>
+<p>Share and Discuss</p>
+</section></section>
+<section id="what-you-should-be-doing" class="title-slide slide level1">
+<h1>What You Should Be Doing</h1>
+<ul>
+<li>Complete Unit 1</li>
+<li>Work on the Unit 2 Reading and Exercises</li>
+<li>Keep talking on Discord.</li>
+</ul>
+</section>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/reveal.js@^4//dist/reveal.js"></script>
+
+  // reveal.js plugins
+  <script src="https://unpkg.com/reveal.js@^4//plugin/notes/notes.js"></script>
+  <script src="https://unpkg.com/reveal.js@^4//plugin/search/search.js"></script>
+  <script src="https://unpkg.com/reveal.js@^4//plugin/zoom/zoom.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+        // Display controls in the bottom right corner
+        controls: true,
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+        // Push each slide change to the browser history
+        history: true,
+
+        // reveal.js plugins
+        plugins: [
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    </body>
+</html>
