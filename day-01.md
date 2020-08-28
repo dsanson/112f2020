@@ -43,9 +43,8 @@ Also, take a look at the Zoom ground rules.
 
 ## Discord
 
--   You need to join our Discord server, by following the [invitation
-    link](https://discord.gg/nGy4rS5). 
--   You can also find this link on ReggieNet.
+-   You need to join our Discord server. You can find the invitation link on
+    Reggienet.
 -   I highly recommend that you install the app.
 
 ## Discord Privacy Settings
