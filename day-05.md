@@ -26,6 +26,8 @@ center: false
 
 -----
 
+-   [Overview] now includes links to slides
+-   Experimental "worksheets" at the top of assignments
 -   Zoom XP not yet added (getting there!)
 -   Retakes in full swing!
 -   Unit 3 posted
