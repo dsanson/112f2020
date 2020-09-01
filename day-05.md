@@ -52,7 +52,7 @@ center: false
 
   Name             Symbolic        Canonical English
   --------------- ---------- -----------------------------
-  Negation            ¬▢      (it is not the case that ▢)
+  Negation            ¬▢      it is not the case that ▢
   Conjunction       (▢∧◯)           (both ▢ and ◯)
   Disjunction       (▢∨◯)           (either ▢ or ◯)
   Conditional       (▢→◯)            (if ▢ then ◯)
@@ -138,7 +138,7 @@ center: false
 ## Canonical English
 
 -   For a sentence in our "canonical" English, just reverse the process.
--   It is not the case that (either Putin is watching or Russian knows your
+-   It is not the case that (either Putin is watching or Russia knows your
     scheme)
 -   It is not the case that (either $\mathrm{P}$ or $\mathrm{R}$)
 -   It is not the case that $\mathrm{(P\mathbin{\vee} R)}$
