@@ -1,7 +1,7 @@
 ---
 author:
 - David Sanson
-title: 'Phi 112: Day 6'
+title: 'Phi 112: Day 7'
 subtitle: The King and Nasr al-Din
 date: 8 September 2020
 title-slide-attributes:
