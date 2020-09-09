@@ -1,0 +1,5 @@
+``` {.ProofChecker .Prop options="guides fonts indent tabindent resize" submission="none"}
+Ex1. ~~R->~~S, R :|-: S
+Ex2. (P->Q)->(R->S), ~(R->S) :|-: ~(P->Q)
+Ex3. P->Q, Q->R, R->S, S->T, ~T :|-: ~P
+```
