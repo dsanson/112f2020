@@ -2,7 +2,7 @@
 author:
 - David Sanson
 title: 'Unit 4'
-subtitle: 
+subtitle: Inference Rules
 title-slide-attributes:
     data-background-image: img/rules.webp
     data-background-size: fill
