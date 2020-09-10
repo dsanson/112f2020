@@ -52,7 +52,7 @@ center: false
 3. [If streets get wet, roads are slippery (PR)]{.indent}
 4. [It rains (PR)]{.indent}
 5. [Streets get wet (MP 2,4)]{.indent}
-6. [*Roads are slippery* (MP 2,5)]{.indent}
+6. [*Roads are slippery* (MP 3,5)]{.indent}
 7. [DD 6]{.premise}
 
 :::
@@ -77,7 +77,7 @@ center: false
 3.  [$W\rightarrow S$ [PR]{.just}]{.indent}
 4.  [$R$ [PR]{.just}]{.indent}
 5.  [$W$ [MP 2,4]{.just}]{.indent}
-6.  [$S$ [MP 2,5]{.just}]{.indent}
+6.  [$S$ [MP 3,5]{.just}]{.indent}
 7.  [:DD 6]{.premise}
 
 :::
