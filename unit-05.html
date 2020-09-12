@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="author" content="David Sanson">
+  <title>Conditional and Indirect Derivations</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js@^4//dist/reset.css">
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js@^4//dist/reveal.css">
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js@^4//dist/theme/moon.css" id="theme">
+  <link rel="stylesheet" href="/Users/desanso/web/_site/css/carnap.css"/>
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide" data-background-image="https://imgs.xkcd.com/comics/hypotheticals.png" data-background-opacity=".2" data-background-size="fill">
+  <h1 class="title">Conditional and Indirect Derivations</h1>
+  <p class="author">David Sanson</p>
+</section>
+
+<section id="outline" class="title-slide slide level1">
+<h1>Outline</h1>
+<ul>
+<li>Conditional Derivations</li>
+<li>Indirect Derivations</li>
+<li>Subderivations</li>
+<li>Theorems</li>
+</ul>
+</section>
+
+<section>
+<section id="conditional-derivations" class="title-slide slide level1">
+<h1>Conditional Derivations</h1>
+
+</section>
+<section id="basics" class="slide level2">
+<h2>Basics</h2>
+<ul>
+<li>A conditional derivation is a formal representation of a conditional proof.</li>
+<li>Conditional proof is a familiar pattern of hypothetical reasoning.</li>
+<li>The basic idea: to prove an <em>if…then…</em>, assume that the <em>if…</em> is true, and show that, from this assumption, the <em>then…</em> follows.</li>
+</ul>
+</section></section>
+<section>
+<section id="conditional-proofs" class="title-slide slide level1">
+<h1>Conditional Proofs</h1>
+
+</section>
+<section id="first-example" class="slide level2">
+<h2>First Example</h2>
+<dl>
+<dt><em>Show</em></dt>
+<dd>If <span class="A">you live in Toronto</span>, then <span class="B">you live in Canada</span>.
+</dd>
+<dt><em>Proof</em></dt>
+<dd>Suppose <span class="A">you live in Toronto</span>. Toronto is a city in Canada, so anyone who lives in Toronto lives in Canada. So, given our assumption, it follows that <span class="B">you live in Canada</span>.
+</dd>
+</dl>
+</section>
+<section id="second-example" class="slide level2">
+<h2>Second Example</h2>
+<dl>
+<dt><em>Show</em></dt>
+<dd>If <span class="A">I have hands</span>, then <span class="B">the external world exists</span>.
+</dd>
+<dt><em>Proof</em></dt>
+<dd>Suppose <span class="A">I have hands</span>. Hands are objects in the external world. So, given our assumption, it follows that <span class="B">the external world exists</span>.
+</dd>
+</dl>
+</section>
+<section id="third-example" class="slide level2">
+<h2>Third Example</h2>
+<dl>
+<dt><em>Show</em></dt>
+<dd>If <span class="A">the King fails to execute Naṣr al-Dīn</span>, then <span class="B">the King should be executed</span>.
+</dd>
+<dt><em>Proof</em></dt>
+<dd>Suppose <span class="A">the King fails to execute Naṣr al-Dīn</span>. Then Naṣr al-Dīn’s claim, “I will be executed”, was a lie. So the King was lying when he said that all liars will be executed. So, by his own decree, <span class="B">the King should be executed</span>.
+</dd>
+</dl>
+</section>
+<section id="fourth-example" class="slide level2">
+<h2>Fourth Example</h2>
+<dl>
+<dt><em>Show</em></dt>
+<dd>If <span class="A">God exists</span>, then <span class="A">free will is an illusion</span>.
+</dd>
+<dt><em>Proof</em></dt>
+<dd>Suppose God exists. By definition, God is all-knowing, and cannot be mistaken. So, for anything I do, she already knows that I will do it before I do it. But that means I can’t do otherwise: If I could, then God could be mistaken. But she can’t be mistaken. So I can’t. And if I can’t do otherwise, then free will is an illusion.
+</dd>
+</dl>
+</section></section>
+<section>
+<section id="conditional-derivations-1" class="title-slide slide level1">
+<h1>Conditional Derivations</h1>
+
+</section>
+<section id="the-basic-pattern" class="slide level2">
+<h2>The Basic Pattern</h2>
+<div class="proof">
+<ol type="1">
+<li class="fragment"><span class="show">▢→◯</span></li>
+<li class="fragment"><span class="indent">▢ <span class="just">AS</span></span></li>
+<li class="fragment"><span class="indent">⋮</span></li>
+<li class="fragment"><span class="indent">⋮</span></li>
+<li class="fragment"><span class="indent">◯</span></li>
+<li class="fragment"><span class="premise">:CD 5</span></li>
+</ol>
+</div>
+</section>
+<section id="an-example" class="slide level2">
+<h2>An Example</h2>
+<p><span class="math inline"><em>P</em> → <em>Q</em>, <em>Q</em> → <em>R</em> ⊢ <em>P</em> → <em>R</em></span></p>
+<div class="proof">
+<ol type="1">
+<li class="fragment"><span class="show">P→R</span></li>
+<li class="fragment"><span class="indent">P <span class="just">AS</span></span></li>
+<li class="fragment"><span class="indent">P→Q <span class="just">PR</span></span></li>
+<li class="fragment"><span class="indent">Q <span class="just">MP 2,3</span></span></li>
+<li class="fragment"><span class="indent">Q→R <span class="just">PR</span></span></li>
+<li class="fragment"><span class="indent">R <span class="just">MP 4,5</span></span></li>
+<li class="fragment"><span class="premise">:CD 6</span></li>
+</ol>
+</div>
+</section>
+<section id="some-examples-in-carnap" class="slide level2">
+<h2>Some Examples in Carnap</h2>
+<div class="carnap-embed stretch">
+<iframe data-src="https://carnap.io/shared/dsanson@gmail.com/unit-05-examples" width="1000" height="400" frameborder="0" marginwidth="0" marginheight="0" scrolling="yes" allowfullscreen="yes">
+</iframe>
+</div>
+</section></section>
+<section>
+<section id="indirect-derivations" class="title-slide slide level1">
+<h1>Indirect Derivations</h1>
+
+</section>
+<section id="basics-1" class="slide level2">
+<h2>Basics</h2>
+<ul>
+<li>Indirect Derivation represents an indirect proof, also known as a proof by <em>reductio ad absurdum</em>.</li>
+<li>The basic idea: to prove that something is false, show that, if it were true, a contradiction would follow.</li>
+</ul>
+</section></section>
+<section>
+<section id="indirect-proofs" class="title-slide slide level1">
+<h1>Indirect Proofs</h1>
+
+</section>
+<section id="first-example-1" class="slide level2">
+<h2>First Example</h2>
+<dl>
+<dt><em>Show</em></dt>
+<dd>It is not the case that <span class="A">God exists</span>.
+</dd>
+<dt><em>Proof</em></dt>
+<dd>Suppose <span class="A">God exists</span>. By definition, she is all-good, all-powerful, and all-knowing. So she won’t allow any evils to occur. But evils do occur. So the assumption that God exists leads to a contradiction. So God doesn’t exist.
+</dd>
+</dl>
+</section>
+<section id="first-example-2" class="slide level2" data-transition="fade">
+<h2 data-transition="fade">First Example</h2>
+<dl>
+<dt><em>Show</em></dt>
+<dd>It is not the case that <span class="A">God exists</span>.
+</dd>
+<dt><em>Proof</em></dt>
+<dd><div class="line-block">Suppose <span class="A">God exists</span>.<br />
+⋮<br />
+<span class="B">There is evil</span>.<br />
+Not <span class="B">there is evil</span>.</div>
+</dd>
+</dl>
+</section>
+<section id="second-example-1" class="slide level2">
+<h2>Second Example</h2>
+<dl>
+<dt><em>Show</em></dt>
+<dd>Not all sentences are false.
+</dd>
+<dt><em>Proof</em></dt>
+<dd>Assume that all sentences are false. But then the sentence ‘All sentences are false’ is true, which contradicts our assumption.
+</dd>
+</dl>
+</section>
+<section id="second-example-2" class="slide level2" data-transition="fade">
+<h2 data-transition="fade">Second Example</h2>
+<dl>
+<dt><em>Show</em></dt>
+<dd>Not <span class="A">all sentences are false</span>.
+</dd>
+<dt><em>Proof</em></dt>
+<dd><div class="line-block">Assume that <span class="A">all sentences are false</span>.<br />
+⋮<br />
+<span class="B">‘All sentences are false’ is true</span>.<br />
+Not <span class="B">‘All sentences are false’ is true</span>.</div>
+</dd>
+</dl>
+</section>
+<section id="third-example-1" class="slide level2">
+<h2>Third Example</h2>
+<dl>
+<dt><em>Show</em></dt>
+<dd>There is no greatest natural number.
+</dd>
+<dt><em>Proof</em></dt>
+<dd>Assume there is a greatest natural number, <span class="math inline"><em>n</em></span>. Then <span class="math inline"><em>n</em> + 1</span> is also a natural number, and is greater than <span class="math inline"><em>n</em></span>. But that contradicts our assumption that <span class="math inline"><em>n</em></span> is the greatest natural number.
+</dd>
+</dl>
+</section>
+<section id="third-example-2" class="slide level2" data-transition="fade">
+<h2 data-transition="fade">Third Example</h2>
+<dl>
+<dt><em>Show</em></dt>
+<dd>Not <span class="A">there is a greatest natural number</span>.
+</dd>
+<dt><em>Proof</em></dt>
+<dd><div class="line-block">Assume <span class="A">there is a greatest natural number</span>, <span class="math inline"><em>n</em></span>.<br />
+⋮<br />
+<span class="B"><span class="math inline"><em>n</em> + 1</span> is greater than <span class="math inline"><em>n</em></span></span><br />
+Not <span class="B"><span class="math inline"><em>n</em> + 1</span> is greater than <span class="math inline"><em>n</em></span></span></div>
+</dd>
+</dl>
+</section></section>
+<section>
+<section id="indirect-derivations-1" class="title-slide slide level1">
+<h1>Indirect Derivations</h1>
+
+</section>
+<section id="the-basic-pattern-1" class="slide level2">
+<h2>The Basic Pattern</h2>
+<div class="proof">
+<ol type="1">
+<li class="fragment"><span class="show">¬▢</span></li>
+<li class="fragment"><span class="indent">▢ <span class="just">AS</span></span></li>
+<li class="fragment"><span class="indent">⋮</span></li>
+<li class="fragment"><span class="indent">⋮</span></li>
+<li class="fragment"><span class="indent">◯</span></li>
+<li class="fragment"><span class="indent">¬◯</span></li>
+<li class="fragment"><span class="premise">:CD 5,6</span></li>
+</ol>
+</div>
+</section>
+<section id="an-example-1" class="slide level2">
+<h2>An Example</h2>
+<p><span class="math inline"><em>P</em> → <em>Q</em>, <em>Q</em> → ¬<em>P</em> ⊢ ¬<em>P</em></span></p>
+<div class="proof">
+<ol type="1">
+<li class="fragment"><span class="show">¬P</span></li>
+<li class="fragment"><span class="indent">P <span class="just">AS</span></span></li>
+<li class="fragment"><span class="indent">P→Q <span class="just">PR</span></span></li>
+<li class="fragment"><span class="indent">Q <span class="just">MP 2,3</span></span></li>
+<li class="fragment"><span class="indent">Q→¬P <span class="just">PR</span></span></li>
+<li class="fragment"><span class="indent">¬P <span class="just">MP 4,5</span></span></li>
+<li class="fragment"><span class="premise">:ID 2,6</span></li>
+</ol>
+</div>
+</section>
+<section id="some-examples-in-carnap-1" class="slide level2">
+<h2>Some Examples in Carnap</h2>
+<div class="carnap-embed stretch">
+<iframe data-src="https://carnap.io/shared/dsanson@gmail.com/unit-05-examples#indirect-derivations" width="1000" height="400" frameborder="0" marginwidth="0" marginheight="0" scrolling="yes" allowfullscreen="yes">
+</iframe>
+</div>
+</section></section>
+<section>
+<section id="subderivations" class="title-slide slide level1">
+<h1>Subderivations</h1>
+
+</section>
+<section id="basics-2" class="slide level2">
+<h2>Basics</h2>
+<ul>
+<li>A subderivation is a derivation <em>inside</em> another derivation</li>
+<li>To start a subderivation, enter a second show line.</li>
+</ul>
+</section>
+<section id="examples-in-carnap" class="slide level2">
+<h2>Examples in Carnap</h2>
+<div class="carnap-embed stretch">
+<iframe data-src="https://carnap.io/shared/dsanson@gmail.com/unit-05-examples#subderivations" width="1000" height="400" frameborder="0" marginwidth="0" marginheight="0" scrolling="yes" allowfullscreen="yes">
+</iframe>
+</div>
+</section></section>
+<section>
+<section id="theorems" class="title-slide slide level1">
+<h1>Theorems</h1>
+
+</section>
+<section id="basics-3" class="slide level2">
+<h2>Basics</h2>
+<ul>
+<li>A theorem is a sentence that can be derived from no premises.</li>
+<li>All theorems are <em>logical truths</em>.</li>
+<li>Examples: <span class="math inline"><em>P</em> → <em>P</em></span>, <span class="math inline"><em>P</em> → ¬¬<em>P</em></span>.</li>
+</ul>
+</section>
+<section id="examples-in-carnap-1" class="slide level2">
+<h2>Examples in Carnap</h2>
+<div class="carnap-embed stretch">
+<iframe data-src="https://carnap.io/shared/dsanson@gmail.com/unit-05-examples#theorems" width="1000" height="400" frameborder="0" marginwidth="0" marginheight="0" scrolling="yes" allowfullscreen="yes">
+</iframe>
+</div>
+</section></section>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/reveal.js@^4//dist/reveal.js"></script>
+
+  // reveal.js plugins
+  <script src="https://unpkg.com/reveal.js@^4//plugin/notes/notes.js"></script>
+  <script src="https://unpkg.com/reveal.js@^4//plugin/search/search.js"></script>
+  <script src="https://unpkg.com/reveal.js@^4//plugin/zoom/zoom.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+        // Display controls in the bottom right corner
+        controls: true,
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+        // Push each slide change to the browser history
+        history: true,
+
+        // reveal.js plugins
+        plugins: [
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    </body>
+</html>
