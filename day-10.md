@@ -23,7 +23,9 @@ center: false
 ## Course Updates
 
 -   Video lectures for U4 and U5 are up, and linked from the Overview page.
--   [U4 Supplements](Unit 4 Supplements) up, with embedded videos
+-   [U4
+    Supplements](https://carnap.io/shared/dsanson@gmail.com/Unit%204%20Supplements)
+    are up, with embedded videos
 -   Retake! Do it! 
 -   Office Hours: TuTh noon to 1pm on Discord
 
