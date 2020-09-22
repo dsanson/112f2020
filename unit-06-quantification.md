@@ -49,7 +49,7 @@ center: false
 ::: {.increment}
 -   'At least one of us is famous'
 -   'Scary or Sporty or Baby or Ginger or Posh is famous'
--   $P\vee Q\vee R\vee S$
+-   $P\vee Q\vee R\vee S \vee T$
 :::
 
 ## Example 4
@@ -58,7 +58,7 @@ center: false
 -   'Some of us are famous'
 -   'At least one of us is famous'
 -   'Scary or Sporty or Baby or Ginger or Posh is famous'
--   $P\vee Q\vee R\vee S$
+-   $P\vee Q\vee R\vee S \vee T$
 :::
 
 ## Example 5
@@ -68,7 +68,7 @@ center: false
 -   'It is not the case that at least one of us is famous'
 -   $\neg(P\vee Q\vee R\vee S)$
 -   'All of us are not famous'
--   $\neg P\wedge \neg Q\wedge \neg R\wedge \neg S$
+-   $\neg P\wedge \neg Q\wedge \neg R\wedge \neg S\wedge \neg T$
 :::
 
 ## Limitations
