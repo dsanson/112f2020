@@ -66,7 +66,7 @@ center: false
 ::: {.increment}
 -   'None of us are famous'
 -   'It is not the case that at least one of us is famous'
--   $\neg(P\vee Q\vee R\vee S)$
+-   $\neg(P\vee Q\vee R\vee S\vee T)$
 -   'All of us are not famous'
 -   $\neg P\wedge \neg Q\wedge \neg R\wedge \neg S\wedge \neg T$
 :::
