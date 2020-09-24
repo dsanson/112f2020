@@ -34,14 +34,14 @@ center: false
 
 # Warm Up
 
-## Two Theorems
+## A Puzzling Theorem
 
--   `P->P` and `Q->(P->Q)` are both *theorems* in our system. They can be
-    derived from no premises.
--   That's because they are both *logical truths* in our system. Sentences
-    that are true in virtue of their logical form.
--   I want you to briefly discuss each sentence, and think about *why* each
-    one has this status, and whether you agree that it should.
+-   "$Q \rightarrow  (P \rightarrow  Q)$" is a *theorem*. It can
+    be derived from no premises.
+-   That means it is a *logical truth*. It is guaranteed to be
+    true, just in virtue of its logical form.
+-   "If go to ISU, then if you go to Michigan State, you go to ISU."
+    -   Is this even true? How can it be a logical truth?
 
 # Working Groups
 
