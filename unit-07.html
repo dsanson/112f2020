@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="author" content="David Sanson">
+  <title>Truth Tables</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js@^4//dist/reset.css">
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js@^4//dist/reveal.css">
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js@^4//dist/theme/moon.css" id="theme">
+  <link rel="stylesheet" href="https://www.davidsanson.com/css/carnap.css"/>
+  <link rel="stylesheet" href="https://carnap.io/static/css/exercises.css"/>
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide" data-background-image="img/canthandletruth.jpeg" data-background-opacity=".2" data-background-size="fill">
+  <h1 class="title">Truth Tables</h1>
+  <p class="author">David Sanson</p>
+</section>
+
+<section>
+<section id="characteristic-truth-tables" class="title-slide slide level1">
+<h1>Characteristic Truth Tables</h1>
+<ul>
+<li>Each connective expresses a truth-function</li>
+<li>We can represent the truth-function expressed by a connective by giving its characteristic truth table</li>
+<li>You can think of the truth-table as displaying the <em>meaning</em> of a word like ‘and’ or ‘if’</li>
+</ul>
+</section>
+<section id="negation" class="slide level2">
+<h2>Negation</h2>
+<div class="itt">
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;"><span class="math inline">▢</span></th>
+<th style="text-align: center;"><span class="math inline">¬▢</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">T</td>
+<td style="text-align: center;">F</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">T</td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul>
+<li>The truth value of negation is the opposite of the truth value of the negated sentence</li>
+</ul>
+</section>
+<section id="conjunction" class="slide level2">
+<h2>Conjunction</h2>
+<div class="itt" rows="2">
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;"><span class="math inline">▢</span></th>
+<th style="text-align: center;"><span class="math inline">◯</span></th>
+<th style="text-align: center;"><span class="math inline">▢ ∧ ◯</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">T</td>
+<td style="text-align: center;">T</td>
+<td style="text-align: center;">T</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">T</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">F</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">T</td>
+<td style="text-align: center;">F</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">F</td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul>
+<li>A conjunction is only true when both of its conjuncts are true</li>
+</ul>
+</section>
+<section id="disjunction" class="slide level2">
+<h2>Disjunction</h2>
+<div class="itt" rows="2">
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;"><span class="math inline">▢</span></th>
+<th style="text-align: center;"><span class="math inline">◯</span></th>
+<th style="text-align: center;"><span class="math inline">▢ ∨ ◯</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">T</td>
+<td style="text-align: center;">T</td>
+<td style="text-align: center;">T</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">T</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">T</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">T</td>
+<td style="text-align: center;">T</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">F</td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul>
+<li>Our disjunction is <em>inclusive</em></li>
+</ul>
+</section>
+<section id="the-biconditional" class="slide level2">
+<h2>The Biconditional</h2>
+<div class="itt" rows="2">
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;"><span class="math inline">▢</span></th>
+<th style="text-align: center;"><span class="math inline">◯</span></th>
+<th style="text-align: center;"><span class="math inline">▢ ↔︎ ◯</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">T</td>
+<td style="text-align: center;">T</td>
+<td style="text-align: center;">T</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">T</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">F</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">T</td>
+<td style="text-align: center;">F</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">T</td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul>
+<li>The biconditional expresses <em>agreement</em>: it is true when its two components have the same truth value</li>
+</ul>
+</section>
+<section id="the-conditional" class="slide level2">
+<h2>The Conditional</h2>
+<div class="itt" rows="2">
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;"><span class="math inline">▢</span></th>
+<th style="text-align: center;"><span class="math inline">◯</span></th>
+<th style="text-align: center;"><span class="math inline">▢ → ◯</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">T</td>
+<td style="text-align: center;">T</td>
+<td style="text-align: center;">T</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">T</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">F</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">T</td>
+<td style="text-align: center;">T</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">T</td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul>
+<li>The conditional is only false when it <em>has to be</em>—when it takes us from T to F. Otherwise, it gets to be true.</li>
+</ul>
+</section></section>
+<section>
+<section id="calculating-truth" class="title-slide slide level1">
+<h1>Calculating Truth</h1>
+<ul>
+<li>Given the characteristic truth tables (and our knowledge of the syntax of our language) we can calculate the truth value of a complex sentence, given an assignment of truth values to its component sentence letters.</li>
+</ul>
+</section>
+<section id="some-examples" class="slide level2">
+<h2>Some Examples</h2>
+<ul>
+<li><a href="https://carnap.io/shared/dsanson@gmail.com/tt-examples#exercise-Ex1">Example 1</a></li>
+<li><a href="https://carnap.io/shared/dsanson@gmail.com/tt-examples#exercise-Ex2">Example 2</a></li>
+</ul>
+</section></section>
+<section>
+<section id="calculating-truth-tables" class="title-slide slide level1">
+<h1>Calculating Truth Tables</h1>
+<ul>
+<li>A truth table lists <em>all possible assignments</em> of truth values to the component sentence letters</li>
+<li>So it has more than one row: a row for each possible assignment</li>
+</ul>
+</section>
+<section id="some-examples-1" class="slide level2">
+<h2>Some Examples</h2>
+<ul>
+<li><a href="https://carnap.io/shared/dsanson@gmail.com/tt-examples#exercise-Ex3">Example 3</a></li>
+<li><a href="https://carnap.io/shared/dsanson@gmail.com/tt-examples#exercise-Ex4">Example 4</a></li>
+</ul>
+</section></section>
+<section>
+<section id="properties-of-sentences" class="title-slide slide level1">
+<h1>Properties of Sentences</h1>
+<ul>
+<li>We can use the truth table of a sentence to determine where it is:</li>
+<li>a <em>logical truth</em> = true on every row</li>
+<li>a <em>logical falsehood</em> = false on every row</li>
+<li><em>logically contingent</em> = true on some, false on some</li>
+</ul>
+</section>
+<section id="some-examples-2" class="slide level2">
+<h2>Some Examples</h2>
+<ul>
+<li><a href="https://carnap.io/shared/dsanson@gmail.com/tt-examples#exercise-Ex5">Example 5</a></li>
+<li><a href="https://carnap.io/shared/dsanson@gmail.com/tt-examples#exercise-Ex6">Example 6</a></li>
+<li><a href="https://carnap.io/shared/dsanson@gmail.com/tt-examples#exercise-Ex4">Example 4</a></li>
+</ul>
+</section></section>
+<section>
+<section id="logical-equivalence" class="title-slide slide level1">
+<h1>Logical Equivalence</h1>
+<ul>
+<li>We can construct a truth table for more than one sentence, and use that table to determine whether or not two sentences are:</li>
+<li><em>logically equivalent</em> = always have the same truth values as each other</li>
+</ul>
+</section>
+<section id="some-examples-3" class="slide level2">
+<h2>Some Examples</h2>
+<ul>
+<li><a href="https://carnap.io/shared/dsanson@gmail.com/tt-examples#exercise-Ex7">Example 7</a></li>
+<li><a href="https://carnap.io/shared/dsanson@gmail.com/tt-examples#exercise-Ex8">Example 8</a></li>
+</ul>
+</section></section>
+<section>
+<section id="validity" class="title-slide slide level1">
+<h1>Validity</h1>
+<ul>
+<li>We can use a truth table to determine whether or not an argument is valid:</li>
+<li><em>truth-functionally valid</em> = no row with all true premises and false conclusion</li>
+<li><em>not truth-functionally valid</em> = at least one row with all true premises and false conclusion</li>
+</ul>
+</section>
+<section id="examples" class="slide level2">
+<h2>Examples</h2>
+<ul>
+<li><a href="https://carnap.io/shared/dsanson@gmail.com/tt-examples#exercise-Ex9">Example 9</a></li>
+<li><a href="https://carnap.io/shared/dsanson@gmail.com/tt-examples#exercise-Ex10">Example 10</a></li>
+<li><a href="https://carnap.io/shared/dsanson@gmail.com/tt-examples#exercise-Ex11">Example 11</a></li>
+</ul>
+</section></section>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/reveal.js@^4//dist/reveal.js"></script>
+
+  // reveal.js plugins
+  <script src="https://unpkg.com/reveal.js@^4//plugin/notes/notes.js"></script>
+  <script src="https://unpkg.com/reveal.js@^4//plugin/search/search.js"></script>
+  <script src="https://unpkg.com/reveal.js@^4//plugin/zoom/zoom.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+        // Display controls in the bottom right corner
+        controls: true,
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+        // Push each slide change to the browser history
+        history: true,
+
+        // reveal.js plugins
+        plugins: [
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    </body>
+</html>
